@@ -1,1 +1,87 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading, #lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: Nunito Sans, sans-serif;
+  height: 100vh;
+  background: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.heading {
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.heading h1 {
+  font-size: 3rem;
+}
+
+.overlay {
+  position: absolute;
+  /* Sit on top of the page content */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  /* Black background with opacity */
+  z-index: -1;
+}
+
+.backlog-column h2 {
+  background: #cf4f21;
+}
+
+.progress-column h2 {
+  background: #14677c;
+}
+
+.complete-column h2 {
+  background: #10ac10;
+}
+
+.on-hold-column h2 {
+  background: #be2e2e;
+}
+
+#lists .list-container {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#lists .list-container h2 {
+  text-align: center;
+  border-radius: 10px;
+  padding: .5rem 0;
+  margin-bottom: 1rem;
+}
+
+#lists .list-container ul li {
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
