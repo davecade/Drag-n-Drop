@@ -3,12 +3,12 @@ const Backlog = ( () => {
     const backlogEl = document.querySelector('.backlog-column')
 
     const init = () => {
-        console.log("Backlog initialized")
         render();
         listeners();
     }
 
     const listeners = () => {
+        
 
     }
 
@@ -17,14 +17,14 @@ const Backlog = ( () => {
 
         markup = `  
             <h2>Backlog</h2>
-            <ul class="list">
-                <li class="list-item">
+            <ul class="backlog-list">
+                <li class="list-item" draggable="true">
                     <p>Testing</p>
                 </li>
-                <li class="list-item">
+                <li class="list-item" draggable="true">
                     <p>Testing</p>
                 </li>
-                <li class="list-item">
+                <li class="list-item" draggable="true">
                     <p>Testing</p>
                 </li>
             </ul>

@@ -3,7 +3,6 @@ const Completed = ( () => {
     const completedEl = document.querySelector('.completed-column')
 
     const init = () => {
-        console.log("Completed initialized")
         render();
         listeners();
     }
@@ -18,13 +17,13 @@ const Completed = ( () => {
         markup = `  
             <h2>Completed</h2>
             <ul class="list">
-                <li class="list-item">
+                <li class="list-item" draggable="true">
                     <p>Testing</p>
                 </li>
-                <li class="list-item">
+                <li class="list-item" draggable="true">
                     <p>Testing</p>
                 </li>
-                <li class="list-item">
+                <li class="list-item" draggable="true">
                     <p>Testing</p>
                 </li>
             </ul>

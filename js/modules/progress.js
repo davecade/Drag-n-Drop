@@ -3,7 +3,6 @@ const Progress = ( () => {
     const progressEl = document.querySelector('.progress-column');
 
     const init = () => {
-        console.log("Progress initialized")
         render();
         listeners();
     }
@@ -18,13 +17,13 @@ const Progress = ( () => {
         markup = `  
             <h2>Progress</h2>
             <ul class="list">
-                <li class="list-item">
+                <li class="list-item" draggable="true">
                     <p>Testing</p>
                 </li>
-                <li class="list-item">
+                <li class="list-item" draggable="true">
                     <p>Testing</p>
                 </li>
-                <li class="list-item">
+                <li class="list-item" draggable="true">
                     <p>Testing</p>
                 </li>
             </ul>

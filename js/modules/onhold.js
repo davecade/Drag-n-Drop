@@ -4,7 +4,6 @@ const OnHold = ( () => {
 
 
     const init = () => {
-        console.log("OnHold initialized")
         render();
         listeners();
     }
@@ -19,13 +18,13 @@ const OnHold = ( () => {
         markup = `  
             <h2>On Hold</h2>
             <ul class="list">
-                <li class="list-item">
+                <li class="list-item" draggable="true">
                     <p>Testing</p>
                 </li>
-                <li class="list-item">
+                <li class="list-item" draggable="true">
                     <p>Testing</p>
                 </li>
-                <li class="list-item">
+                <li class="list-item" draggable="true">
                     <p>Testing</p>
                 </li>
             </ul>
