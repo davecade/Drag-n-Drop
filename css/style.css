@@ -62,6 +62,10 @@ body {
   background: #be2e2e;
 }
 
+#lists {
+  align-items: start;
+}
+
 #lists .list-container {
   flex: 1;
   background-color: rgba(0, 0, 0, 0.4);
@@ -83,5 +87,25 @@ body {
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 10px;
+}
+
+#lists .list-container .add {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 40%;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+#lists .list-container .add:active {
+  transform: scale(0.98);
+}
+
+#lists .list-container .input-text {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,8 +8,13 @@ const Backlog = ( () => {
     }
 
     const listeners = () => {
-        
+        const addButtonEl = document.querySelector('.backlog-column .add')
+        const inputTextEl = document.querySelector('.backlog-column .input-text')
 
+        addButtonEl.addEventListener('click', () => {
+            console.log("clicked")
+            inputTextEl.style = "display: initial"
+        })
     }
 
     const render= () => {
@@ -29,6 +34,7 @@ const Backlog = ( () => {
                 </li>
             </ul>
             <div class="add"> + <span>Add Item</span></div>
+            <input type="textarea" class="input-text">
         `
         backlogEl.innerHTML = markup;
     }
