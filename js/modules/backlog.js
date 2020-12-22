@@ -7,6 +7,10 @@ const Backlog = ( () => {
         listeners();
     }
 
+    const state = {
+        list: ['Hello', 'Dave', 'OMG']
+    }
+
     const listeners = () => {
         const addButtonEl = document.querySelector('.backlog-column .add')
         const inputTextEl = document.querySelector('.backlog-column .input-text')
@@ -19,19 +23,20 @@ const Backlog = ( () => {
 
     const render= () => {
         let markup = ''
+        let listMarkup = ``
+
+        listMarkup = state.list.map(item => {
+            return `
+                <li class="list-item" draggable="true">
+                    <p>${item}</p>
+                </li>
+            `
+        })
 
         markup = `  
             <h2>Backlog</h2>
             <ul class="backlog-list">
-                <li class="list-item" draggable="true">
-                    <p>Testing</p>
-                </li>
-                <li class="list-item" draggable="true">
-                    <p>Testing</p>
-                </li>
-                <li class="list-item" draggable="true">
-                    <p>Testing</p>
-                </li>
+                ${listMarkup.join("")}
             </ul>
             <div class="add"> + <span>Add Item</span></div>
             <input type="textarea" class="input-text">
